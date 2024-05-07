@@ -6,6 +6,7 @@ import CopilotPrice from "./CopilotPrice";
 import CopilotCart from "./CopilotCart";
 import CopilotFAQ from "./CopilotFAQ";
 import CopilotMind from "./CopilotMind";
+import Microsoft365Copilot from "../../../../assets/Introducing Microsoft365Copilot _ YourCopilotWork.mp4";
 
 const Copilot = () => {
   const [showLearnMoreModal, setShowLearnMoreModal] = useState(false);
@@ -195,74 +196,6 @@ const Copilot = () => {
                 </button>
               </div>
             </div>
-            {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4  ">
-          <div className="p-8 md:col-span-1">
-            <h2 className="text-5xl font-semibold mb-2 mt-10  text-gray-900">
-              Microsoft Copilot
-            </h2>
-            <p className="text-lg text-gray-800 mb-4">
-              Achieve anything you can imagine with your everyday AI companion.
-            </p>
-            <div className="flex flex-wrap gap-4 mt-10">
-              <button
-                onClick={handleLearnMore}
-                className="bg-blue-500 hover:bg-blue-600 text-white font-lg py-3 px-6 rounded-lg focus:outline-none focus:ring focus:ring-blue-400"
-              >
-                Download Copilot App
-              </button>
-            </div>
-          </div>
-
-          <div className=" aspect-video  mr-8 ">
-            <iframe
-              className=" h-full w-full rounded-lg"
-              src="https://www.youtube.com/embed/S7xTBa93TX8?start=12"
-              width="100%"
-              title="Microsoft 365 Copilot Demo"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div> */}
-            {/* <section>
-          <div class="text-center">
-            <h2 class="text-4xl font-semibold mb-2 mt-0 text-[#1b1c44]">
-              Empower the future of your business with Copilot
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pb-20 pt-12 px-20">
-            <div className="p-8 md:col-span-1">
-              <h3 class="text-3xl font-semibold text-[#1b1c44] mb-2 mt-10 ">
-                Achieve anything you can imagine with your everyday AI
-                companion.
-              </h3>
-              <p class="text-lg text-[#1b1c44] mb-4">
-                Use our Copilot Success Kit to help drive user enablement and
-                technical readiness in your organization
-              </p>
-              <div className="flex flex-wrap gap-4 mt-10 justify-start">
-                <button
-                  onClick={handleLearnMore}
-                  className="bg-gradient-to-r from-orange-500 to-pink-500 text-black scale-105 font-lg hover:text-white py-3 px-6 rounded-lg focus:outline-none focus:ring focus:ring-blue-400"
-                >
-                  Download Copilot App
-                </button>
-              </div>
-            </div>
-
-            <div className="relative aspect-w-16 aspect-h-12 md:aspect-w-16 md:aspect-h-9 bg-gradient-to-r from-blue-400 to-blue-700 rounded-3xl overflow-hidden md:col-span-1 border-8 border-gray-400">
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                <iframe
-                  className="absolute w-full h-full rounded-lg"
-                  src="https://www.youtube.com/embed/S7xTBa93TX8?start=12"
-                  title="Microsoft 365 Copilot Demo"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </section> */}
             <section pt-0>
               <div class="text-center">
                 <h2 class="text-4xl font-semibold mb-4 mt-0 text-[#1b1c44]">
@@ -301,14 +234,20 @@ const Copilot = () => {
                   </div>
                 </div>
 
-                <div class="relative aspect-w-16 aspect-h-12 md:aspect-w-16 md:aspect-h-9 bg-gradient-to-r from-blue-400 to-blue-700 rounded-3xl overflow-hidden md:col-span-1 border-8 border-gray-400">
-                  <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                <div class="relative aspect-w-16 aspect-h-12 md:aspect-w-16 md:aspect-h-9 bg-gradient-to-r from-gray-50 to-gray-50 rounded-3xl overflow-hidden md:col-span-1 border-8 border-gray-400">
+                  {/* <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
                     <iframe
                       class="absolute w-full h-full rounded-lg"
-                      src="https://www.youtube.com/embed/S7xTBa93TX8?start=12"
+                      src={Microsoft365Copilot}
                       title="Microsoft 365 Copilot Demo"
                       allowFullScreen
                     ></iframe>
+                  </div> */}
+                  <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                    <video class="absolute w-full h-full rounded-lg" controls>
+                      <source src={Microsoft365Copilot} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </div>

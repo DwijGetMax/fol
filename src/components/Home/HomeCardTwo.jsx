@@ -8,7 +8,7 @@ import GetmaxImgSix from "../../assets/HomeImg/germaxImgSix.png";
 
 const HomeCardTwo = () => {
   return (
-    <div className="text-center py-8">
+    <div className="text-center pb-8 pt-0">
       <h1 className="text-4xl font-semibold text-[#1b1c44] mb-8">
         Begin your cloud journey with us,
         <span className="text-orange-600 font-bold">

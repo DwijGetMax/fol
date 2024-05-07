@@ -11,18 +11,18 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 export default function Success() {
   return (
     <>
-      <div>
-        <div className="flex items-center justify-between h-full w-full absolute z-0">
+      <div >
+        <div className="flex items-center justify-between h-full w-full absolute z-0  pt-10">
           <div className="w-1/3 bg-white h-full" />
           <div className="w-4/6 ml-16 bg-gray-100 h-full" />
         </div>
-        <div className="xl:px-20 px-8 py-20 2xl:mx-auto 2xl:container relative z-40">
+        <div className="xl:px-20 px-8 pt-20 2xl:mx-auto 2xl:container relative z-40">
           <CarouselProvider
             naturalSlideWidth={100}
             isIntrinsicHeight={true}
             totalSlides={2}
           >
-            <h1 className="text-5xl font-bold xl:block hidden leading-tight text-gray-800">
+            <h1 className="text-4xl font-semibold xl:block hidden leading-tight text-gray-800">
               What our customers are
               <br />
               saying
@@ -115,7 +115,7 @@ export default function Success() {
                 </div>
               </Slide>
             </Slider>
-            <div className="flex items-center mt-8">
+            <div className="flex items-center mt-8 ">
               <ButtonBack
                 className="cursor-pointer "
                 role="button"

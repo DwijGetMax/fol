@@ -16,7 +16,7 @@ import { Button } from "@material-tailwind/react";
 const LandingCard = () => {
   return (
     <>
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 mt-10">
         <h1 className="text-4xl font-semibold text-[#1b1c44] mb-4">
           Our Solutions &{" "}
           <span className="text-orange-600 font-bold">Offerings</span>

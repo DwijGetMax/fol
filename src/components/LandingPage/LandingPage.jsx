@@ -150,31 +150,23 @@ const LandingPage = () => {
         {/* Your component's code here */}
 
         <section
-          className="bg-cover bg-center py-10 px-4"
+          className="bg-cover bg-center py-24 px-4"
           style={{
             backgroundImage: `url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/M365_Free%20Video_1400x1250_Landing-Page-Hero?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=500&qlt=100&fit=constrain')`,
           }}
         >
           <div className="w-full md:w-1/2 lg:w-5/6 text-center md:text-left">
-            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4 font-sans">
+            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4  ">
               Accelerating{" "}
-              <span className="text-[#1b1c44] font-extrabold">
-                {" "}
-                Microsoft 365
-              </span>
+              <span className="text-white font-bold"> Microsoft 365</span>
               <br className="hidden lg:inline" />
-              <span className="text-[#1b1c44] font-extrabold">
-                Deployment:
-              </span>{" "}
-              A Swift Approach
+              <span className="text-white font-bold">Deployment:</span> A Swift
+              Approach
             </h1>
             <p className="text-lg text-white mb-6 leading-relaxed font-sans">
-              Discover a streamlined method for deploying Microsoft 365,
-              <br />
-              optimizing efficiency without compromising effectiveness. <br />
-              Our approach ensures a smooth transition, empowering <br />
-              your team to harness the full potential of Microsoft's suite of
-              tools with ease
+              Effortlessly deploy Microsoft 365 for maximum efficiency and
+              seamless integration, <br /> empowering your team to excel with
+              ease
             </p>
             <div className="flex mt-8">
               <button
@@ -187,15 +179,15 @@ const LandingPage = () => {
           </div>
         </section>
         <section>
-          <HeroSection />
+          {/* <HeroSection /> */}
           <LandingCard />
-          <LandingSection />
 
           <div id="contact-form-section">
             <LandingContactUs />
           </div>
-          <LandingTestimony />
         </section>
+        <LandingSection />
+          <LandingTestimony />
       </div>
     </>
   );

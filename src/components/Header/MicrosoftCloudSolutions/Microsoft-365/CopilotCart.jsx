@@ -174,6 +174,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { useState } from "react";
 import VideoOne from "../../../../assets/Copilotstudio.mp4";
+import VideTwo from "../../../../assets/Build your own copilot with Azure AI Studio.mp4";
 
 const SingleCard = ({
   image,
@@ -297,7 +298,7 @@ const CopilotCart = () => {
                     CardTitle="Microsoft Azure AI Studio"
                     CardDescription="Build, test, and deploy AI solutions at scale with cutting-edge models on a unified, open, and flexible AI platform for developers."
                     Button="View Details"
-                    videoUrl="https://www.youtube.com/watch?v=3hZorLy6JiA"
+                    videoUrl={VideTwo}
                   />
                 </div>
               </div>

@@ -141,8 +141,8 @@ const SharepointCard = () => {
     "Enhance unity and keep employees informed with your intranet. Boost efficiency with home sites, portals, and personalized news, fostering compelling communication across all platforms.",
     "Instantly access insights with SharePoint's robust search. Seamlessly connect and collaborate with Microsoft Viva Engage for accelerated knowledge sharing and informed decision-making.",
     "Boost efficiency with streamlined processes using SharePoint Lists, Microsoft Power Automate, and Power Apps. Craft immersive digital experiences tailored for any device.",
-    "Harness the Power of AI for Content Insights, Translation, Auto-Assembly, and Annotations Seamlessly Integrated into Microsoft 365 and Teams.",
-    "Expand and Build Content Applications with High-Volume Containers, Data, and Robust APIs for Enhanced Functionality",
+    "Harness the Power of AI for Content Insights, Translation, Auto-Assembly, and Annotations Seamlessly Integrated into Microsoft 365 and Microsoft Teams.",
+    "Expand and build content applications with high-volume containers, data, and robust APIs for enhanced functionality. Maximize scalability, streamline operations, and elevate user experiences through seamless integration and advanced feature sets",
     "Leverage AI-Powered Security and Compliance Measures to Analyze and Safeguard Content Throughout Its Lifecycle. Benefit from Backup/Restore Capabilities and Advanced Content Management Features for Enhanced Protection.",
   ];
 
@@ -171,7 +171,7 @@ const SharepointCard = () => {
             <div
               key={part}
               className={`cursor-pointer p-4 border-b border-gray-600 ${
-                selectedPart === part ? "bg-blue-600" : ""
+                selectedPart === part ? "" : ""
               }`}
               onClick={() => handleClick(part)}
               style={{
@@ -180,7 +180,7 @@ const SharepointCard = () => {
               }}
             >
               {selectedPart === part
-                ? `Description for ${partNames[part - 1]}`
+                ? ` ${partNames[part - 1]}`
                 : `${partNames[part - 1]}`}
             </div>
           ))}
@@ -221,7 +221,7 @@ const SharepointCard = () => {
                       />
                     </div>
                   </div>
-                  <p className="text-black flex text-center text-sm">
+                  <p className="text-black flex text-center text-sm px-16">
                     {descriptions[part - 1]}
                   </p>
                 </div>

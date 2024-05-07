@@ -7,6 +7,11 @@ import SharepointCard from "./SharepointCard";
 import SharepointColaboration from "./SharepointColaboration";
 import Onedrive from "./Onedrive";
 import SharepointFAQ from "./SharePointFAQ";
+import OnedriveOne from "../../../../assets/sharepoint/How to use SharePoint _ Microsoft.mp4";
+import OnedriveTwo from "../../../../assets/sharepoint/Overview of Microsoft Syntex.mp4";
+import OnedriveThree from "../../../../assets/sharepoint/Turn content into knowledge with Microsoft SharePoint Syntex.mp4";
+import OnedriveFour from "../../../../assets/sharepoint/Creating contracts management solution in Microsoft 365 with SharePoint Syntex.mp4";
+import OnedriveFive from "../../../../assets/sharepoint/IntroducingMicrosoftSyntexplugins for Microsoft 365 Copilot.mp4";
 const SharePointAndOneDrive = () => {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -21,95 +26,95 @@ const SharePointAndOneDrive = () => {
   return (
     <>
       <Helmet>
-          {/* Title */}
-          <title>
+        {/* Title */}
+        <title>
           Microsoft 365 SharePoint & OneDrive: Secure Data Management Solutions
-          </title>
-          {/* Description */}
-          <meta
-            name="description"
-            content="Discover Microsoft 365 SharePoint & OneDrive for secure data management and collaboration. Explore advanced document sharing, version control, and cloud storage solutions tailored to your business needs"
-          />
+        </title>
+        {/* Description */}
+        <meta
+          name="description"
+          content="Discover Microsoft 365 SharePoint & OneDrive for secure data management and collaboration. Explore advanced document sharing, version control, and cloud storage solutions tailored to your business needs"
+        />
 
-          {/* Canonical URL */}
-          <link
-            rel="canonical"
-            href="http://localhost:5173/microsoft-365/sharepoint-one-drive"
-          />
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="http://localhost:5173/microsoft-365/sharepoint-one-drive"
+        />
 
-          {/* Open Graph (OG) tags */}
-          <meta property="og:locale" content="en_US" />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:title"
-            content=" Microsoft 365 SharePoint & OneDrive: Secure Data Management Solutions"
-          />
-          <meta
-            property="og:description"
-            content="Discover Microsoft 365 SharePoint & OneDrive for secure data management and collaboration. Explore advanced document sharing, version control, and cloud storage solutions tailored to your business needs"
-          />
-          <meta
-            property="og:url"
-            content="http://localhost:5173/microsoft-365/sharepoint-one-drive"
-          />
-          <meta
-            property="og:site_name"
-            content="GetMax.Ae Microsoft 365 Managed Services"
-          />
-          <meta property="article:publisher" content="" />
-          <meta property="article:published_time" content="" />
-          <meta property="article:modified_time" content="" />
-          <meta
-            property="og:image"
-            content="microsoft-365/sharepoint-one-drive"
-          />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="629" />
+        {/* Open Graph (OG) tags */}
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content=" Microsoft 365 SharePoint & OneDrive: Secure Data Management Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Discover Microsoft 365 SharePoint & OneDrive for secure data management and collaboration. Explore advanced document sharing, version control, and cloud storage solutions tailored to your business needs"
+        />
+        <meta
+          property="og:url"
+          content="http://localhost:5173/microsoft-365/sharepoint-one-drive"
+        />
+        <meta
+          property="og:site_name"
+          content="GetMax.Ae Microsoft 365 Managed Services"
+        />
+        <meta property="article:publisher" content="" />
+        <meta property="article:published_time" content="" />
+        <meta property="article:modified_time" content="" />
+        <meta
+          property="og:image"
+          content="microsoft-365/sharepoint-one-drive"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="629" />
 
-          {/* Twitter tags */}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:creator" content="" />
-          <meta name="twitter:site" content="" />
-          <meta name="twitter:label1" content="Written by" />
-          <meta name="twitter:data1" content="Pankaj Jain" />
-          <meta name="twitter:label2" content="Est. reading time" />
-          <meta name="twitter:data2" content="3 minutes" />
+        {/* Twitter tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="" />
+        <meta name="twitter:site" content="" />
+        <meta name="twitter:label1" content="Written by" />
+        <meta name="twitter:data1" content="Pankaj Jain" />
+        <meta name="twitter:label2" content="Est. reading time" />
+        <meta name="twitter:data2" content="3 minutes" />
 
-          {/* Facebook tags */}
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="YOUR_WEBSITE_URL" />
-          <meta
-            property="og:title"
-            content="Microsoft 365 SharePoint & OneDrive: Secure Data Management Solutions"
-          />
-          <meta
-            property="og:description"
-            content="Discover Microsoft 365 SharePoint & OneDrive for secure data management and collaboration. Explore advanced document sharing, version control, and cloud storage solutions tailored to your business needs"
-          />
-          <meta property="og:image" content="" />
+        {/* Facebook tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="YOUR_WEBSITE_URL" />
+        <meta
+          property="og:title"
+          content="Microsoft 365 SharePoint & OneDrive: Secure Data Management Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Discover Microsoft 365 SharePoint & OneDrive for secure data management and collaboration. Explore advanced document sharing, version control, and cloud storage solutions tailored to your business needs"
+        />
+        <meta property="og:image" content="" />
 
-          {/* LinkedIn tags */}
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:url"
-            content="https://www.linkedin.com/company/getmax/"
-          />
-          <meta
-            property="og:title"
-            content="Microsoft 365 SharePoint & OneDrive: Secure Data Management Solutions"
-          />
-          <meta
-            property="og:description"
-            content="Discover Microsoft 365 SharePoint & OneDrive for secure data management and collaboration. Explore advanced document sharing, version control, and cloud storage solutions tailored to your business needs"
-          />
-          <meta
-            property="og:image"
-            content="microsoft-365/solutions-and-offerings"
-          />
-          <meta property="og:site_name" content="YOUR_WEBSITE_NAME" />
+        {/* LinkedIn tags */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.linkedin.com/company/getmax/"
+        />
+        <meta
+          property="og:title"
+          content="Microsoft 365 SharePoint & OneDrive: Secure Data Management Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Discover Microsoft 365 SharePoint & OneDrive for secure data management and collaboration. Explore advanced document sharing, version control, and cloud storage solutions tailored to your business needs"
+        />
+        <meta
+          property="og:image"
+          content="microsoft-365/solutions-and-offerings"
+        />
+        <meta property="og:site_name" content="YOUR_WEBSITE_NAME" />
 
-          <script type="application/ld+json">
-            {`
+        <script type="application/ld+json">
+          {`
     {
       "@context": "https://schema.org",
       "@type": "Article",
@@ -141,8 +146,8 @@ const SharePointAndOneDrive = () => {
       "description": "Discover Microsoft 365 SharePoint & OneDrive for secure data management and collaboration. Explore advanced document sharing, version control, and cloud storage solutions tailored to your business needs"
     }
     `}
-          </script>
-        </Helmet>
+        </script>
+      </Helmet>
       <div className="bg-gradient-to-l from-gray-100 to-blue-300 ">
         <main class="relative h-screen overflow-hidden bg-gradient-to-l from-gray-100 to-blue-300 dark:bg-gray-800">
           <div class="container mx-auto flex items-center justify-between ">
@@ -188,14 +193,132 @@ const SharePointAndOneDrive = () => {
         </main>
         <section>
           <div className="p-6 pt-0 mt-0 mb-8 items-center text-center bg-gradient-to-l from-gray-100 to-blue-300">
-            <h2 className="text-2xl font-semibold text-[#1b1c44] mb-2 mt-4">
-              Empower your team with seamless collaboration, efficient content
-              management and easy access to knowledge and applications.
+            <h2 className="text-3xl font-semibold text-[#1b1c44] mb-2 mt-4">
+              Empower your team with seamless collaboration and easy access to
+              knowledge and applications
             </h2>
-            <p className="text-lg text-[#1b1c44] mb-0">
-              Share and manage content effortlessly, enabling swift information
-              retrieval and fostering collaboration across your organization.
-            </p>
+            <section className=" py-16 px-4">
+              <div>
+                <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center">
+                  {/* Content Section */}
+                  <div className="lg:w-1/2 lg:mr-8">
+                    <h2 className="text-2xl md:text-2xl lg:text-2xl  text-[#1b1c44] mb-4">
+                      Using Microsoft SharePoint Effectively
+                    </h2>
+                    <p className="text-lg text-[#1b1c44] mb-2 leading-relaxed">
+                      Embrace SharePoint: Your collaboration hub. Share,
+                      streamline, innovate – achieve together
+                    </p>
+                  </div>
+                  {/* Video Section */}
+                  <div className="lg:w-1/2 lg:ml-8 mb-8 lg:mb-0">
+                    <video
+                      src={OnedriveOne}
+                      alt="microsoft-365 onedrive image"
+                      className="w-full h-auto rounded-3xl"
+                      controls
+                      loop // Add this to loop the video
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="mt-20">
+                <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center">
+                  {/* Video Section */}
+                  <div className="lg:w-1/2 lg:mr-8 mb-8 lg:mb-0">
+                    <video
+                      src={OnedriveTwo}
+                      alt="microsoft-365 onedrive image"
+                      className="w-full h-auto rounded-3xl"
+                      controls // Add this to autoplay the video (usually required for autoplay)
+                      loop // Add this to loop the video
+                    />
+                  </div>
+                  {/* Content Section */}
+                  <div className="lg:w-1/2 lg:ml-8">
+                    <h2 className="text-2xl md:text-2xl lg:text-2xl text-[#1b1c44] mb-4">
+                      Overview of Microsoft Syntex
+                    </h2>
+                    <p className="text-lg text-[#1b1c44] mb-2 leading-relaxed">
+                      Unlocking new horizons in content management, empowered by
+                      AI automation within SharePoint Syntex.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-20">
+                <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center">
+                  {/* Content Section */}
+                  <div className="lg:w-1/2 lg:mr-8">
+                    <h2 className="text-2xl md:text-2xl lg:text-2xl  text-[#1b1c44] mb-4">
+                      Turn content into knowledge with Microsoft Syntex
+                    </h2>
+                    <p className="text-lg text-[#1b1c44] mb-2 leading-relaxed">
+                      Optimize content management with SharePoint Online Syntex.
+                      Automate classification, boost productivity.
+                    </p>
+                  </div>
+                  {/* Video Section */}
+                  <div className="lg:w-1/2 lg:ml-8 mb-8 lg:mb-0">
+                    <video
+                      src={OnedriveThree}
+                      alt="microsoft-365 onedrive image"
+                      className="w-full h-auto rounded-3xl"
+                      controls // Add this to autoplay the video (usually required for autoplay)
+                      loop // Add this to loop the video
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="mt-20">
+                <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center">
+                  {/* Video Section */}
+                  <div className="lg:w-1/2 lg:ml-8 mb-8 lg:mb-0">
+                    <video
+                      src={OnedriveFour}
+                      alt="microsoft-365 onedrive image"
+                      className="w-full h-auto rounded-3xl"
+                      controls
+                      loop // Add this to loop the video
+                    />
+                  </div>
+                  {/* Content Section */}
+                  <div className="lg:w-1/2 lg:ml-8">
+                    <h2 className="text-2xl md:text-2xl lg:text-2xl text-[#1b1c44] mb-4">
+                      Contract management solution with Sharepoint Syntex
+                    </h2>
+                    <p className="text-lg text-[#1b1c44] mb-2 leading-relaxed">
+                      Build an advanced contract management solution with
+                      SharePoint Online Syntex, optimizing processes with
+                      automation and compliance features
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-20">
+                <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center">
+                  {/* Content Section */}
+                  <div className="lg:w-1/2 lg:mr-8">
+                    <h2 className="text-2xl md:text-2xl lg:text-2xl text-[#1b1c44] mb-4">
+                      SharePoint Syntex plugins for Microsoft 365 Copilot
+                    </h2>
+                    <p className="text-lg text-[#1b1c44] mb-2 leading-relaxed">
+                      Enhance Microsoft 365 Copilot with Microsoft Syntex
+                      plugins, revolutionizing productivity and automation
+                    </p>
+                  </div>
+                  {/* Video Section */}
+                  <div className="lg:w-1/2 lg:ml-8 mb-8 lg:mb-0 ">
+                    <video
+                      src={OnedriveFive}
+                      alt="microsoft-365 onedrive image"
+                      className="w-full h-auto rounded-3xl"
+                      controls // Add this to loop the video
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
           {showPopup && (
             <div className="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-80 z-50">

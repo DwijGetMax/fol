@@ -49,14 +49,12 @@
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import LandingContactUs from "./LandingContactUs";
 
 const HemoSecondSection = () => {
   const navigate = useNavigate();
 
   const handleContactUsClick = () => {
     navigate("/microsoft-365/contactform");
-    // navigate(<LandingContactUs />);
   };
 
   return (
@@ -97,7 +95,5 @@ const HemoSecondSection = () => {
     </>
   );
 };
-
-
 
 export default HemoSecondSection;

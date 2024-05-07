@@ -9,6 +9,7 @@ import HemoSecondSection from "./HomeSecondSection";
 import HomeCard from "./HomeCard";
 import HomeCardTwo from "./HomeCardTwo";
 import HomeCardThree from "./HomeCardThree";
+import Blog from "./Blog"
 // import Team from "./Team";
 // import SecondScreen from "./SecondScreen";
 // import Brand from "./Brand";
@@ -159,7 +160,7 @@ const Home = () => {
           </script>
         </Helmet>
         <section>
-          <section className=" py-2 shadow-md">
+          <section className=" py-2 shadow-md ">
             <div className="container mx-auto flex justify-between items-center">
               <div className="text-center">
                 <h2 className="text-sm font-semibold">
@@ -324,11 +325,14 @@ const Home = () => {
             </div>
             <ShuffleGrid />
           </section>
-          <HemoSecondSection />
-          <HomeCard />
-          <HomeCardTwo />
-          <Success />
-          <HomeCardThree />
+          <section className="bg-gradient-to-r  from-indigo-100 to-yellow-50">
+            <HemoSecondSection />
+            <HomeCardTwo />
+            <HomeCard />
+            <Success />
+            <Blog/>
+            {/* <HomeCardThree /> */}
+          </section>
           {/* <Partner /> */}
           {/* <SecondScreen /> */}
           {/* <Service /> */}
