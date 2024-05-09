@@ -10,13 +10,13 @@ parameters:
 # Service Connection details
 - name: ServiceConnection
   type: string
-  default: <Service Connection Name>
+  default: websitedeploytest
   displayName: Service Connection
 
 # React Web App Name
 - name: WebAppName
   type: string
-  default: <Web App Name>
+  default: winwinda
   displayName: React Web App Name
   
 variables:
@@ -34,7 +34,6 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    cd <Folder path where package.json is present> # <- Optional command. Remove it if everything is in root folder itself.
     npm install
     npm run build --if-present
   displayName: 'npm install and build'
@@ -42,7 +41,7 @@ steps:
 - task: ArchiveFiles@2
   displayName: 'Archive files'
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/<Folder path where package.json is present else remove this section>/$(buildDirectory)'
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/$(buildDirectory)'
     includeRootFolder: false
     archiveType: 'zip'
     archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
